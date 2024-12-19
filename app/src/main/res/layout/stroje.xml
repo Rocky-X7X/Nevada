@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/kasino">
+
+    <TableRow
+        android:id="@+id/tableRow0"
+        android:layout_width="389dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textPrazdny"
+            android:layout_width="119dp"
+            android:layout_height="wrap_content"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textRano"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="Ráno"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textVecer"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="Večer"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textRozdiel"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="Rozdiel"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="15sp" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="389dp"
+        android:layout_height="40dp"
+        android:background="#80A18D0C"
+        android:backgroundTint="#A5952D"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow0">
+
+        <TextView
+            android:id="@+id/Synoty"
+            android:layout_width="119dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Synoty"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/synotR"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:ems="10"
+            android:textColor="@color/cardview_light_background" />
+
+        <EditText
+            android:id="@+id/synotV"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:ems="10"
+            android:textColor="@color/cardview_light_background" />
+
+        <TextView
+            android:id="@+id/synotyRozdiel"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="24sp" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="389dp"
+        android:layout_height="40dp"
+        android:background="#80730B0B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow1">
+
+        <TextView
+            android:id="@+id/Egaming1"
+            android:layout_width="119dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Egaming 1"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/egaming1R"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="0"
+            android:inputType="numberDecimal"
+            android:textColor="@color/cardview_light_background" />
+
+        <EditText
+            android:id="@+id/egaming1V"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="0"
+            android:inputType="numberDecimal"
+            android:textColor="@color/cardview_light_background" />
+
+        <TextView
+            android:id="@+id/egaming1Rozdiely"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="24sp" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="389dp"
+        android:layout_height="40dp"
+        android:background="#80730B0B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow2">
+
+
+        <TextView
+            android:id="@+id/Egaming2"
+            android:layout_width="119dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Egaming 2"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/egaming2R"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="0"
+            android:inputType="numberDecimal"
+            android:textColor="@color/cardview_light_background" />
+
+        <EditText
+            android:id="@+id/egaming2V"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="0"
+            android:inputType="numberDecimal"
+            android:textColor="@color/cardview_light_background" />
+
+        <TextView
+            android:id="@+id/egaming2Rozdiely"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="24sp" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="389dp"
+        android:layout_height="40dp"
+        android:background="#80730B0B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow3">
+
+        <TextView
+            android:id="@+id/Egaming3"
+            android:layout_width="119dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Egaming 3"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/egaming3R"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="0"
+            android:inputType="numberDecimal"
+            android:textColor="@color/cardview_light_background" />
+
+        <EditText
+            android:id="@+id/egaming3V"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="0"
+            android:inputType="numberDecimal"
+            android:textColor="@color/cardview_light_background" />
+
+        <TextView
+            android:id="@+id/egaming3Rozdiely"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="24sp" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow5"
+        android:layout_width="389dp"
+        android:layout_height="40dp"
+        android:background="#80730B0B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow4">
+
+        <TextView
+            android:id="@+id/Egaming4"
+            android:layout_width="119dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Egaming 4"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/egaming4R"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="0"
+            android:inputType="numberDecimal"
+            android:textColor="@color/cardview_light_background" />
+
+        <EditText
+            android:id="@+id/egaming4V"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="0"
+            android:inputType="numberDecimal"
+            android:textColor="@color/cardview_light_background" />
+
+        <TextView
+            android:id="@+id/egaming4Rozdiely"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="24sp" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow6"
+        android:layout_width="389dp"
+        android:layout_height="40dp"
+        android:background="#804360A3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow5">
+
+        <TextView
+            android:id="@+id/Kajot1"
+            android:layout_width="119dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Kajot 1"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/kajot1R"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="0"
+            android:inputType="numberDecimal"
+            android:textColor="@color/cardview_light_background" />
+
+        <EditText
+            android:id="@+id/kajot1V"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="0"
+            android:inputType="numberDecimal"
+            android:textColor="@color/cardview_light_background" />
+
+        <TextView
+            android:id="@+id/kajot1Rozdiely"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="24sp" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow7"
+        android:layout_width="389dp"
+        android:layout_height="40dp"
+        android:background="#804360A3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow6">
+
+        <TextView
+            android:id="@+id/Kajot2"
+            android:layout_width="119dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Kajot 2"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/kajot2R"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="0"
+            android:inputType="numberDecimal"
+            android:textColor="@color/cardview_light_background" />
+
+        <EditText
+            android:id="@+id/kajot2V"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="0"
+            android:inputType="numberDecimal"
+            android:textColor="@color/cardview_light_background" />
+
+        <TextView
+            android:id="@+id/kajot2Rozdiely"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="24sp" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow8"
+        android:layout_width="389dp"
+        android:layout_height="40dp"
+        android:background="#80206A33"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow7">
+
+        <TextView
+            android:id="@+id/Apollo1"
+            android:layout_width="119dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Apollo 1"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/apollo1R"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="0"
+            android:inputType="numberDecimal"
+            android:textColor="@color/cardview_light_background" />
+
+        <EditText
+            android:id="@+id/apollo1V"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="0"
+            android:inputType="numberDecimal"
+            android:textColor="@color/cardview_light_background" />
+
+        <TextView
+            android:id="@+id/apollo1Rozdiely"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="24sp" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow9"
+        android:layout_width="389dp"
+        android:layout_height="40dp"
+        android:background="#80206A33"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow8">
+
+        <TextView
+            android:id="@+id/Apollo2"
+            android:layout_width="119dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Apollo 2"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/apollo2R"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="0"
+            android:inputType="numberDecimal"
+            android:textColor="@color/cardview_light_background" />
+
+        <EditText
+            android:id="@+id/apollo2V"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="0"
+            android:inputType="numberDecimal"
+            android:textColor="@color/cardview_light_background" />
+
+        <TextView
+            android:id="@+id/apollo2Rozdiely"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="24sp" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow10"
+        android:layout_width="389dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="160dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow9">
+
+        <TextView
+            android:id="@+id/Cashomat"
+            android:layout_width="119dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Cashomat"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/cashomatSpolu"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="0"
+            android:inputType="numberDecimal"
+            android:textColor="@color/cardview_light_background"
+            android:textColorHint="@color/white" />
+
+        <EditText
+            android:id="@+id/cashomatZmenaren"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="0"
+            android:inputType="numberDecimal"
+            android:textColor="@color/cardview_light_background"
+            android:textColorHint="@color/white" />
+
+        <TextView
+            android:id="@+id/cashomatRozdiely"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="20sp" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow11"
+        android:layout_width="389dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="130dp"
+        android:textColor="@color/cardview_light_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow10">
+
+        <TextView
+            android:id="@+id/Kasa"
+            android:layout_width="119dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Kasa"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/kasaSuma"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="0"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            android:textColor="@color/cardview_light_background"
+            android:textColorHint="@color/cardview_light_background" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow12"
+        android:layout_width="389dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow11"
+        app:layout_constraintVertical_bias="0.418">
+
+        <TextView
+            android:id="@+id/CelkovaSuma"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Celková suma :"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/celkovaSumaId"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/cardview_light_background"
+            android:textColorHint="@color/cardview_light_background"
+            android:textSize="30sp" />
+    </TableRow>
+
+    <TextView
+        android:id="@+id/sumaStrojovId"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="290dp"
+        android:textColor="@color/cardview_light_background"
+        app:layout_constraintBottom_toTopOf="@+id/tableRow10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow9" />
+
+    <Button
+        android:id="@+id/ButtonInventuraId"
+        style="@style/Button"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/button"
+        android:text="Inventúra"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/ButtonStrojeId"
+        style="@style/Button"
+        android:background="@drawable/button"
+        android:text="Stroje"
+        android:textColor="@color/white"
+        android:textColorHighlight="#FDD835"
+        android:textColorLink="#1E88E5"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ButtonTrezorId"
+        app:layout_constraintStart_toEndOf="@+id/ButtonInventuraId" />
+
+    <Button
+        android:id="@+id/ButtonTrezorId"
+        style="@style/Button"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/button"
+        android:text="Trezor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

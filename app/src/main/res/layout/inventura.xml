@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Inventura"
+    android:background="@drawable/kasino">
+
+
+    <TextView
+        android:id="@+id/RanajsiTrezor"
+        style="@style/StylViewTextu1"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Raňajší trezor :"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ranajsiTrezorId"
+        style="@style/StylEditTextu1"
+        android:text="0"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/RanajsiTrezor"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/DoplnenePeniaze1"
+        style="@style/StylViewTextu1"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Doplnené peniaze 1 :"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RanajsiTrezor" />
+
+    <EditText
+        android:id="@+id/doplnenePeniaze1Id"
+        style="@style/StylEditTextu1"
+        android:text="0"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/DoplnenePeniaze1"
+        app:layout_constraintTop_toBottomOf="@+id/ranajsiTrezorId" />
+
+    <TextView
+        android:id="@+id/DoplnenePeniaze2"
+        style="@style/StylViewTextu1"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Doplnené peniaze 2 :"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DoplnenePeniaze1" />
+
+    <EditText
+        android:id="@+id/doplnenePeniaze2Id"
+        style="@style/StylEditTextu1"
+        android:text="0"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/DoplnenePeniaze2"
+        app:layout_constraintTop_toBottomOf="@+id/doplnenePeniaze1Id" />
+
+    <TextView
+        android:id="@+id/SpoluTrezor"
+        style="@style/StylViewTextu1"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:text="Spolu trezor : "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DoplnenePeniaze2" />
+
+    <TextView
+        android:id="@+id/spoluTrezorId"
+        style="@style/StylViewTextu1"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_width="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/SpoluTrezor"
+        app:layout_constraintTop_toBottomOf="@+id/doplnenePeniaze2Id" />
+
+    <TextView
+        android:id="@+id/Vyhry"
+        style="@style/StylViewTextu1"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Výhry : "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SpoluTrezor" />
+
+    <TextView
+        android:id="@+id/vyhryId"
+        style="@style/StylEditTextu1"
+        android:text="0"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Vyhry"
+        app:layout_constraintTop_toBottomOf="@+id/spoluTrezorId" />
+
+    <TextView
+        android:id="@+id/Atm"
+        style="@style/StylViewTextu1"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Atm : "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Vyhry" />
+
+    <EditText
+        android:id="@+id/atmId"
+        style="@style/StylEditTextu1"
+        android:text="0"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Atm"
+        app:layout_constraintTop_toBottomOf="@+id/vyhryId" />
+
+    <TextView
+        android:id="@+id/Cashomat"
+        style="@style/StylViewTextu1"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Cashomat : "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Atm" />
+
+    <EditText
+        android:id="@+id/cashomatId"
+        style="@style/StylEditTextu1"
+        android:text="0"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintStart_toEndOf="@+id/Cashomat"
+        app:layout_constraintTop_toBottomOf="@+id/atmId" />
+
+    <TextView
+        android:id="@+id/Naklady"
+        style="@style/StylViewTextu1"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Náklady-Výplaty : "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Cashomat" />
+
+    <EditText
+        android:id="@+id/nakladyId"
+        style="@style/StylEditTextu1"
+        android:text="0"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintStart_toEndOf="@+id/Naklady"
+        app:layout_constraintTop_toBottomOf="@+id/cashomatId" />
+
+    <TextView
+        android:id="@+id/OdovydanaHotvost"
+        style="@style/StylViewTextu1"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:text="Odovydaná hotvosť : "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Naklady" />
+
+    <TextView
+        android:id="@+id/odovzdanaHotvostId"
+        style="@style/StylViewTextu1"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_width="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/OdovydanaHotvost"
+        app:layout_constraintTop_toBottomOf="@+id/nakladyId"/>
+
+
+    <Button
+        android:id="@+id/ButtonInventuraId"
+        style="@style/Button"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/button"
+        android:text="Inventúra"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/ButtonStrojeId"
+        style="@style/Button"
+        android:background="@drawable/button"
+        android:text="Stroje"
+        android:textColorLink="#1E88E5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ButtonTrezorId"
+        app:layout_constraintStart_toEndOf="@+id/ButtonInventuraId" />
+
+    <Button
+        android:id="@+id/ButtonTrezorId"
+        style="@style/Button"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/button"
+        android:text="Trezor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

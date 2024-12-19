@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="StylEditTextu3">
+        <item name="android:inputType">numberDecimal</item> //definujem co sa bude zadavat
+        <item name="android:background">@drawable/obdlznik</item>
+        <item name="android:textSize">20sp</item> //velkost textu
+        <item name="android:textAlignment">center</item>
+        <item name="android:textStyle">bold</item> // tucny text
+        <item name="android:hint">0.00</item>
+    </style>
+</resources>

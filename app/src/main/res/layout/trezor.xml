@@ -1,0 +1,690 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/kasino">
+
+    <TableRow
+        android:id="@+id/tableRow"
+        android:layout_width="389dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    <TextView
+        android:id="@+id/Mince"
+        style="@style/StylEditTextu1"
+        android:textColor="@color/cardview_light_background"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="Mince : "
+        android:layout_marginLeft="10dp"
+        android:textSize="15sp"/>
+    <EditText
+        android:id="@+id/minceId"
+        style="@style/StylEditTextu3"
+        android:textColor="@color/cardview_light_background"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:text="0"
+        android:gravity="center" />
+        <TextView
+            android:id="@+id/Mincovnik"
+            style="@style/StylViewTextu1"
+            android:textColor="@color/cardview_light_background"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Mincovník : "
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp" />
+        <EditText
+            android:id="@+id/mincovnikId"
+            style="@style/StylEditTextu3"
+            android:textColor="@color/cardview_light_background"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text="0"
+            android:gravity="center" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow1"
+
+        android:layout_width="389dp"
+        android:layout_height="40dp"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow" >
+
+        <TextView
+            android:id="@+id/MinceSpolu"
+            style="@style/StylViewTextu1"
+            android:textColor="@color/cardview_light_background"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Mince spolu :"
+            android:textSize="11sp" />
+        <TextView
+            android:id="@+id/minceSpoluId"
+            style="@style/StylEditTextu3"
+            android:textColor="@color/cardview_light_background"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text="0"
+            android:gravity="center" />
+        <TextView
+            android:id="@+id/Poskodene"
+            style="@style/StylViewTextu1"
+            android:textColor="@color/cardview_light_background"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Poškodené :"
+            android:textSize="15sp" />
+        <EditText
+            android:id="@+id/poskodeneId"
+            style="@style/StylEditTextu3"
+            android:textColor="@color/cardview_light_background"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text="0"
+            android:gravity="center" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="389dp"
+        android:layout_height="40dp"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow1">
+
+    <TextView
+        android:id="@+id/NakladyRano"
+        style="@style/StylViewTextu1"
+        android:textColor="@color/cardview_light_background"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="Náklady ráno :"
+        android:textSize="10sp" />
+
+        <EditText
+            android:id="@+id/nakladyRanoId"
+            style="@style/StylEditTextu3"
+            android:textColor="@color/cardview_light_background"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text="0"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/Naklady1"
+            style="@style/StylViewTextu1"
+            android:textColor="@color/cardview_light_background"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Náklady 1 :"
+            android:textSize="15sp" />
+        <EditText
+            android:id="@+id/naklady1Id"
+            style="@style/StylEditTextu3"
+            android:textColor="@color/cardview_light_background"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text="0"
+            android:gravity="center" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="389dp"
+        android:layout_height="40dp"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow2">
+
+        <TextView
+            android:id="@+id/Naklady2"
+            style="@style/StylViewTextu1"
+            android:textColor="@color/cardview_light_background"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Náklady 2 :"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/naklady2Id"
+            style="@style/StylEditTextu3"
+            android:textColor="@color/cardview_light_background"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text="0"
+            android:gravity="center" />
+        <TextView
+            android:id="@+id/NakladySpolu"
+            style="@style/StylViewTextu1"
+            android:textColor="@color/cardview_light_background"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Náklady spolu :"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/nakladySpoluId"
+            style="@style/StylEditTextu3"
+            android:textColor="@color/cardview_light_background"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text="0"
+            android:gravity="center" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="389dp"
+        android:layout_height="40dp"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow3">
+
+        <TextView
+            android:id="@+id/Zalohy1"
+            style="@style/StylViewTextu1"
+            android:textColor="@color/cardview_light_background"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Zálohy 1 :"
+            android:textSize="15sp" />
+        <EditText
+            android:id="@+id/zalohy1Id"
+            style="@style/StylEditTextu3"
+            android:textColor="@color/cardview_light_background"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text="0"
+            android:gravity="center" />
+        <TextView
+            android:id="@+id/Zalohy2"
+            style="@style/StylViewTextu1"
+            android:textColor="@color/cardview_light_background"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Zálohy 2 :"
+            android:textSize="15sp" />
+        <EditText
+            android:id="@+id/zalohy2Id"
+            style="@style/StylEditTextu3"
+            android:textColor="@color/cardview_light_background"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text="0"
+            android:gravity="center" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow5"
+        android:layout_width="389dp"
+        android:layout_height="40dp"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow4">
+
+        <TextView
+            android:id="@+id/KolesoRano"
+            style="@style/StylViewTextu1"
+            android:textColor="@color/cardview_light_background"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Koleso ráno :"
+            android:textSize="11sp" />
+        <EditText
+            android:id="@+id/kolesoRanoId"
+            style="@style/StylEditTextu3"
+            android:textColor="@color/cardview_light_background"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text="0"
+            android:gravity="center" />
+        <TextView
+            android:id="@+id/KolesoVecer"
+            style="@style/StylViewTextu1"
+            android:textColor="@color/cardview_light_background"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Koleso večer :"
+            android:textSize="12sp" />
+        <EditText
+            android:id="@+id/kolesoVecerId"
+            style="@style/StylEditTextu3"
+            android:textColor="@color/cardview_light_background"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text="0"
+            android:gravity="center" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow55"
+        android:layout_width="389dp"
+        android:layout_height="40dp"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow5">
+
+        <TextView
+            android:id="@+id/KolesoSpolu"
+            style="@style/StylViewTextu1"
+            android:textColor="@color/cardview_light_background"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Koleso spolu :"
+            android:textSize="10sp" />
+        <TextView
+            android:id="@+id/kolesoSpoluId"
+            style="@style/StylEditTextu3"
+            android:textColor="@color/cardview_light_background"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text="0"
+            android:gravity="center"
+            android:inputType="numberDecimal" />
+        <TextView
+            android:id="@+id/inventuraHodnotaId"
+            android:textColor="@color/cardview_light_background"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="numberDecimal"/>
+
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow6"
+        android:layout_width="389dp"
+        android:layout_height="40dp"
+        app:layout_constraintHorizontal_bias="0.50"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow55">
+        <TextView
+            android:id="@+id/SpoluHodnota"
+            style="@style/StylViewTextu1"
+            android:textColor="@color/cardview_light_background"
+            android:layout_width="170dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Spolu hodnota :"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/spoluHodnotaId"
+            style="@style/StylEditTextu3"
+            android:textColor="@color/cardview_light_background"
+            android:layout_width="150dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="0"
+            android:textSize="20sp" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow7"
+        android:layout_width="389dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow6">
+
+        <ImageView
+            android:id="@+id/FiveHundred"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            app:srcCompat="@drawable/fivehundred" />
+        <EditText
+            android:id="@+id/fiveHundredPocetId"
+            style="@style/StylEditTextu3"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:ems="20"
+            android:gravity="center"
+            android:text="0"
+            android:inputType="numberDecimal"
+            android:textColor="@color/cardview_light_background" />
+        <TextView
+            android:id="@+id/fiveHundredSpoluId"
+            style="@style/StylEditTextu3"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:ems="20"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/cardview_light_background" />
+        <ImageView
+            android:id="@+id/TwoHundred"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            app:srcCompat="@drawable/twohundred" />
+        <EditText
+            android:id="@+id/twoHundredPocetId"
+            style="@style/StylEditTextu3"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:ems="20"
+            android:gravity="center"
+            android:text="0"
+            android:inputType="numberDecimal"
+            android:textColor="@color/cardview_light_background" />
+        <TextView
+            android:id="@+id/twoHundredSpoluId"
+            style="@style/StylEditTextu3"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:ems="20"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/cardview_light_background" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow8"
+        android:layout_width="389dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow7">
+
+        <ImageView
+            android:id="@+id/OneHundred"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            app:srcCompat="@drawable/onehundred" />
+        <EditText
+            android:id="@+id/oneHundredPocetId"
+            style="@style/StylEditTextu3"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:ems="20"
+            android:gravity="center"
+            android:text="0"
+            android:inputType="numberDecimal"
+            android:textColor="@color/cardview_light_background" />
+        <TextView
+            android:id="@+id/oneHundredSpoluId"
+            style="@style/StylEditTextu3"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:ems="20"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/cardview_light_background" />
+        <ImageView
+            android:id="@+id/Fifty"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            app:srcCompat="@drawable/fifty" />
+        <EditText
+            android:id="@+id/fiftyPocetId"
+            style="@style/StylEditTextu3"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:ems="20"
+            android:gravity="center"
+            android:text="0"
+            android:inputType="numberDecimal"
+            android:textColor="@color/cardview_light_background" />
+        <TextView
+            android:id="@+id/fiftySpoluId"
+            style="@style/StylEditTextu3"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:ems="20"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/cardview_light_background" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow9"
+        android:layout_width="389dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow8">
+
+        <ImageView
+            android:id="@+id/Tewnty"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            app:srcCompat="@drawable/twenty" />
+        <EditText
+            android:id="@+id/twentyPocetId"
+            style="@style/StylEditTextu3"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:ems="20"
+            android:gravity="center"
+            android:text="0"
+            android:inputType="numberDecimal"
+            android:textColor="@color/cardview_light_background" />
+        <TextView
+            android:id="@+id/twentySpoluId"
+            style="@style/StylEditTextu3"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:ems="20"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/cardview_light_background" />
+        <ImageView
+            android:id="@+id/Ten"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            app:srcCompat="@drawable/ten" />
+        <EditText
+            android:id="@+id/tenPocetId"
+            style="@style/StylEditTextu3"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:ems="20"
+            android:gravity="center"
+            android:text="0"
+            android:inputType="numberDecimal"
+            android:textColor="@color/cardview_light_background" />
+        <TextView
+            android:id="@+id/tenSpoluId"
+            style="@style/StylEditTextu3"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:ems="20"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/cardview_light_background" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow10"
+        android:layout_width="389dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow9">
+
+        <ImageView
+            android:id="@+id/Five"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            app:srcCompat="@drawable/five" />
+        <EditText
+            android:id="@+id/fivePocetId"
+            style="@style/StylEditTextu3"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:ems="20"
+            android:gravity="center"
+            android:text="0"
+            android:inputType="numberDecimal"
+            android:textColor="@color/cardview_light_background" />
+        <TextView
+            android:id="@+id/fiveSpoluId"
+            style="@style/StylEditTextu3"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:ems="20"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/cardview_light_background" />
+
+        <TextView
+            android:id="@+id/HotovostSpolu"
+            style="@style/StylViewTextu1"
+            android:textColor="@color/cardview_light_background"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Hotovosť :"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/hotovostId"
+            style="@style/StylEditTextu3"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:ems="20"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/cardview_light_background" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow11"
+        android:layout_width="389dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow10">
+
+        <TextView
+            android:id="@+id/VyslednaHodnota"
+            style="@style/StylViewTextu1"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Výsledná hodnota :"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/vyslednaHodnotaId"
+            style="@style/StylEditTextu3"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="0"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow12"
+        android:layout_width="389dp"
+        android:layout_height="40dp"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow11">
+
+    <TextView
+        android:id="@+id/Tringelt"
+        style="@style/StylViewTextu1"
+        android:textColor="@color/cardview_light_background"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="Tringelt - Manko :"
+        android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tringeltId"
+            style="@style/StylEditTextu3"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:ems="20"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/cardview_light_background" />
+    </TableRow>
+
+    <Button
+        android:id="@+id/ButtonInventuraId"
+        style="@style/Button"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/button"
+        android:text="Inventúra"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/ButtonStrojeId"
+        style="@style/Button"
+        android:background="@drawable/button"
+        android:text="Stroje"
+        android:textColorHighlight="#FDD835"
+        android:textColorLink="#1E88E5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ButtonTrezorId"
+        app:layout_constraintStart_toEndOf="@+id/ButtonInventuraId" />
+
+    <Button
+        android:id="@+id/ButtonTrezorId"
+        style="@style/Button"
+        android:layout_marginEnd="20dp"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:background="@drawable/button"
+        android:text="Trezor"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
